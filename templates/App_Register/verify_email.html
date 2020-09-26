@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+Hi {{ first_name }} {{ last_name }} !
+
+Welcome Here. Please clink the link below to confirm your account.
+http://{{ domain }}{% url 'App_Register:email_confirmation' activation_key=activation_key %}
+
+Best Regard,
+TanmoY.
+{% endautoescape %}
